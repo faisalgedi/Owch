@@ -14,6 +14,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.EditText;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -47,9 +48,15 @@ public class MainActivity extends AppCompatActivity
                 // Write a message to the database
                 // Create a new user with a first and last name
                 Map<String, Object> user = new HashMap<>();
-                user.put("username", "Ada");
-                user.put("password", "Lovelace");
-                user.put("born", 1815);
+                EditText username = (EditText)findViewById(R.id.editText2);
+                String userStr = username.getText().toString();
+                EditText password = (EditText)findViewById(R.id.editText6);
+                String passStr = password.getText().toString();
+                EditText email = (EditText)findViewById(R.id.editText4);
+                String emailStr = email.getText().toString();
+                user.put("username", userStr);
+                user.put("password", passStr);
+                user.put("email", emailStr);
 
                 // Add a new document with a generated ID
                 FirebaseFirestore db = FirebaseFirestore.getInstance();
