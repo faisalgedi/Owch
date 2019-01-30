@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "305320722886",
+    "firebase_url": "https://owch-bfdcf.firebaseio.com",
+    "project_id": "owch-bfdcf",
+    "storage_bucket": "owch-bfdcf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:305320722886:android:4bf4e7e543530372",
+        "android_client_info": {
+          "package_name": "com.example.mytestapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "305320722886-04n77c334utki6ldcm8osep0fdtduh34.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCawuseEO6xGjbvWes8pI6394648Z-7D90"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
